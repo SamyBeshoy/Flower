@@ -1,0 +1,49 @@
+// import variables file
+@use "variables" as *; 
+
+/*! global */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    // height: 10000px;
+}
+@media (max-width: 860px) {
+    body {
+        font-size: 13px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 11px;
+    }
+}
+@media (max-width: 650px) {
+    body {
+        font-size: 10px;
+    }
+}
+@media (max-width: 300px) {
+    body {
+        font-size: 8px;
+    }
+}
+section {
+    padding: 3em 5em;
+}
+.sec-tit {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 2em;
+    .title-active {
+        color: $main_color;
+    }
+}
+/*! global */

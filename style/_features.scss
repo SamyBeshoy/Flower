@@ -1,0 +1,37 @@
+// import variables file
+@use "variables" as *; 
+
+/*! features */
+.features {
+    background-color: rgb(178, 176, 176);
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .box-f {
+        margin: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5em;
+        width: 200px;
+        span {
+            font-size: 2em;
+        }
+        .text-f {
+            text-align: center;
+            p {
+                color: $sec_color;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .box-f {
+            flex-direction: column;
+        }
+    }
+}
+
+/*! features */

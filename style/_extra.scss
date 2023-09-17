@@ -1,0 +1,36 @@
+// import variables file
+@use "variables" as *; 
+
+/*! extra */
+.extra {
+    background-color: rgb(178, 176, 176);
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    .extra-box {
+        margin: 10px;
+        h3 {
+            font-size: 1.4em;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+        }
+        p {
+            color: black;
+            font-size: 1.2em;
+        }
+    }    
+}
+@media (max-width: 767px) {
+    .extra {
+        flex-direction: column;
+        align-items: center;
+    }
+    .extra-box { 
+        text-align: center;
+    }
+}
+/*! extra */

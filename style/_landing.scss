@@ -1,0 +1,47 @@
+// import variables file
+@use "variables" as *; 
+
+/*! landing */
+.landing {
+    height: calc(100vh - 50px);
+    background-image: url("../img/3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(140, 0, 255);
+    display: flex;
+    padding: 0 5em;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    .title-landing {
+        font-size: 3em;
+    }
+    div {
+        color: $main_color;
+        margin: 15px 0;
+        font-size: 1.5em;
+    }
+    p {
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.836);
+        line-height: 1.2;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(90, 86, 86);
+        padding: 10px 40px;
+        border-radius: 20px;
+        transition: $main_transition;
+        font-size: 1.2em;
+    }
+    a:hover {
+        transform: scale(1.1);
+    }
+}
+/*! landing */

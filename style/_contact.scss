@@ -1,0 +1,32 @@
+// import variables file
+@use "variables" as *; 
+
+/*! contact */
+#contact {
+    div {
+        display: flex;
+        justify-content: center;
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid rgb(0, 0, 0);
+            width: fit-content;
+            padding: 20px;
+            input {
+                margin: 0.8em;
+                padding: 0.4em;
+                border-color: black;
+            }
+            input:nth-child(4) {
+                padding: 0.4em 2em;
+                border-radius: 20px;
+                background-color: rgb(90, 86, 86);
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+/*! contact */

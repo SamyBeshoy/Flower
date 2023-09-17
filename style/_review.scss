@@ -1,0 +1,48 @@
+// import variables file
+@use "variables" as *; 
+
+/*! review */
+#review {
+    .boxs-r {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box-r {
+            width: 300px;
+            box-shadow: rgb(0, 0, 0) 0px 0px 8px 0px;
+            padding: 20px;
+            margin: 10px;
+            span {
+                color: $main_color;
+                font-size: 1.4em;
+            }
+            p {
+                line-height: 1.3;
+                color: $sec_color;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    width: 5em;
+                    border-radius: 50%;
+                }
+                .text-box-r {
+                    display: block;
+                    div:nth-child(1) {
+                        color: rgb(0, 0, 0);
+                        font-weight: bold;
+                        font-size: 1.1em;
+                    }
+                    div:nth-child(2) {
+                        color: $sec_color;
+                    }
+                }
+            }
+        }
+    }
+}
+/*! review */
